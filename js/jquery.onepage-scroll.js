@@ -103,6 +103,7 @@
       index = $(settings.sectionContainer +".active").data("index");
       if(index+1 != 1){                
           $(".onepage-pagination li a").removeClass("white");
+          $(".onepage-pagination li a").removeClass("whiteSelect");
       }
       if(index < total) {
         current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -237,6 +238,13 @@
     if(settings.pagination == true)  {
       $(".onepage-pagination li a").click(function (){
         var page_index = $(this).data("index");
+        if(page_index == 1){                
+          $(".onepage-pagination li a" + "[data-index='" + page_index + "']").addClass("whiteSelect");
+          $(".onepage-pagination li a").addClass("white");
+        }else{
+          $(".onepage-pagination li a").removeClass("white");
+          $(".onepage-pagination li a").removeClass("whiteSelect");
+        }
         if (!$(this).hasClass("active")) {
           current = $(settings.sectionContainer + ".active")
           next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
