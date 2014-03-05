@@ -19,7 +19,28 @@ $( document ).ready(function() {
 		    $("#tooltip5").tooltip({title: 'Social'});
 		    $("#tooltip6").tooltip({title: 'Contact'});
 		}
-
+    
+    //inserto el mail en la web
+    mailOfuscator();
 });
 
-
+//Añade el correo en la página sin mostrarlo
+function mailOfuscator()
+{
+    { coded = "FUbqhXOJUbqh@j5qEB.IU5"
+      key = "c86JsHpwtbgN4Z9Y2WdS7VICovDnla0Gjmk3Ti1eXyfrLxURuhBqKMF5QPzEAO"
+      shift=coded.length
+      link=""
+      for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+          ltr = coded.charAt(i)
+          link += (ltr)
+        }
+        else {     
+          ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+          link += (key.charAt(ltr))
+        }
+      }
+    $('#mreciber').append("<a href='mailto:"+link+"'>"+link+"</a>")
+    }
+}
