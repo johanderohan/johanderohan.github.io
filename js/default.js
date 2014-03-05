@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    
+    //cambio el color del paginador
+    $(".onepage-pagination li a").addClass("white");
+    $(".onepage-pagination li a" + "[data-index='1']").addClass("whiteSelect");
 
 	if (navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)

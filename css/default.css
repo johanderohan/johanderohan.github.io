@@ -8,3 +8,6 @@ body {overflow:hidden; background: url('../img/header.jpg') no-repeat; backgroun
 .proyects{background-image: url('../img/proyects.jpg');}
 .social{background-color: #39CCCC;}
 .contact{background-image: url('../img/contact.png');}
+
+.onepage-pagination li a.white:before{background: rgba(255,255,255,0.85);}
+.onepage-pagination li a.whiteSelect:before {background: none; border: 1px solid white;}

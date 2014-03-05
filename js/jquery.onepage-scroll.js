@@ -101,6 +101,9 @@
     $.fn.moveDown = function() {
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
+      if(index+1 != 1){                
+          $(".onepage-pagination li a").removeClass("white");
+      }
       if(index < total) {
         current = $(settings.sectionContainer + "[data-index='" + index + "']");
         next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
@@ -110,6 +113,9 @@
           if(settings.pagination == true) {
             $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
             $(".onepage-pagination li a" + "[data-index='" + (index + 1) + "']").addClass("active");
+            if(index+1 != 1){
+                $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("whiteSelect");
+            }
           }
           $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
           $("body").addClass("viewing-page-"+next.data("index"))
@@ -127,7 +133,10 @@
     $.fn.moveUp = function() {
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
-      if(index <= total && index > 1) {
+        if(index-1 == 1){                
+          $(".onepage-pagination li a").addClass("white");
+        }
+        if(index <= total && index > 1) {
         current = $(settings.sectionContainer + "[data-index='" + index + "']");
         next = $(settings.sectionContainer + "[data-index='" + (index - 1) + "']");
 
@@ -137,6 +146,10 @@
           if(settings.pagination == true) {
             $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
             $(".onepage-pagination li a" + "[data-index='" + (index - 1) + "']").addClass("active");
+            if(index-1 == 1){
+                $(".onepage-pagination li a" + "[data-index='" + (index - 1) + "']").addClass("whiteSelect");
+                $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("whiteSelect");
+            }
           }
           $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
           $("body").addClass("viewing-page-"+next.data("index"))
