@@ -4,10 +4,20 @@
 /* Color Section */
 body {overflow:hidden; background: url('../img/header.jpg') no-repeat; background-size: cover;}
 .skills{background-image: url('../img/skills.jpg');}
-.work{background-image: url('../img/work.jpg');}
+.work{background-image: url('../img/skills.jpg');}
 .proyects{background-image: url('../img/proyects.jpg');}
 .social{background-color: #39CCCC;}
 .contact{background-image: url('../img/contact.png');}
 
 .onepage-pagination li a.white:before{background: rgba(255,255,255,0.85);}
 .onepage-pagination li a.whiteSelect:before {background: none; border: 1px solid white;}
+
+.col-md-4 { text-align: center; }
+.logo{
+    width: 150px;
+    border-radius: 75px;
+    margin-top: 55%;
+}
+
+h1 {font-family: 'Montez';}
+h2 {font-family: 'Unica One'; font-size: 3em}
