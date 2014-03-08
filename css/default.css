@@ -4,7 +4,7 @@
 /* Color Section */
 body {overflow:hidden; background: url('../img/header.jpg') no-repeat; background-size: cover;}
 .skills{background-image: url('../img/skills.jpg');}
-.work{background-image: url('../img/skills.jpg');}
+.work{background-image: url('../img/work.jpg');}
 .proyects{background-image: url('../img/proyects.jpg');}
 .social{background-color: #39CCCC;}
 .contact{background-image: url('../img/contact.png');}
