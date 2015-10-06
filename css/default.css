@@ -6,13 +6,13 @@ html, body, .main {height: 100%;}
 body {overflow:hidden; background: url('../img/header.jpg') no-repeat; background-size: cover; background-color: #333;}
 
 .main {background-color: rgba(50,50,70,0.7);}
-.intro {cursor: pointer;}
+.intro {cursor: pointer; height: 80%;}
 .proyects {display: none; cursor: pointer;}
 .col-xs-12 { text-align: center; }
 .logo{
     width: 140px;
     border-radius: 5px;
-    margin-top: 12%;
+    margin-top: 100px;
     -webkit-box-shadow: 6px 6px 6px 6px rgba(0,0,0,.1);
 	-moz-box-shadow: 6px 6px 6px 6px rgba(0,0,0,.1);
 	box-shadow: 6px 6px 6px 6px rgba(0,0,0,.1);
@@ -89,9 +89,7 @@ strong { color:#FF6E6E;}
 footer {
 	text-align: center;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
-	padding-bottom: 80px;
+	height: 20%;
 	text-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
