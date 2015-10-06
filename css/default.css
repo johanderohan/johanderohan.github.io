@@ -7,7 +7,7 @@ html {overflow:hidden; background: url('../img/header.jpg') no-repeat; backgroun
 
 body {background-color: rgba(50,50,70,0.7);}
 .intro {cursor: pointer; height: 500px;}
-.proyects {display: none; cursor: pointer;}
+.proyects {display: none; cursor: pointer; height: 500px;}
 .col-xs-12 { text-align: center; }
 .logo{
     width: 140px;
